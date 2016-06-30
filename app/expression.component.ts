@@ -6,11 +6,11 @@ import { Component } from '@angular/core';
         <h1>Expressions</h1>
         
         <input #count type="number" value="4" (input)="star = count.value > 5">
-        <label><input #show type="checkbox" (change)="0" checked> Show</label>
         
-        <p [hidden]="!show.checked" 
-           [title]="rating(count.value) + (star ? ' You\\'re a star!' : '')"
-           [innerHTML]="symbol.repeat(count.value)">
+        <p [hidden]="!count.valueAsNumber">Rating:
+            <span [title]="rating(count.value) + (star ? ' You\\'re a star!' : '')"
+                  [innerHTML]="symbol.repeat(count.value)">
+            </span>
         </p>`
 })
 export class ExpressionComponent {

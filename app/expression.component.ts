@@ -11,8 +11,7 @@ import { Component } from '@angular/core';
         <p [hidden]="!show.checked" 
            [title]="rating(count.value) + (star ? ' You\\'re a star!' : '')"
            [innerHTML]="symbol.repeat(count.value)">
-        </p>
-    `
+        </p>`
 })
 export class ExpressionComponent {
 

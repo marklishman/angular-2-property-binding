@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'properties',
+    selector: 'property',
     template: `
         <h1 [textContent]="'Name: ' + person.name"></h1>
         
@@ -10,10 +10,10 @@ import { Component } from '@angular/core';
         
         <p><img [src]="person.photo" [alt]="person.name" [title]="person.name"></p>
         <p [hidden]="!person.rating">
-            Rating: <span [innerHtml]="'&#10032;'.repeat(person.rating)"></span>
+            Rating: <span [innerHTML]="'&#10032;'.repeat(person.rating)"></span>
         </p>`
 })
-export class PropertiesComponent {
+export class PropertyComponent {
     private female = {
         name: 'Turanga Leela',
         sex: 'f',

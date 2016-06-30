@@ -1,15 +1,18 @@
 import { Component } from '@angular/core';
 
-import { PropertiesComponent } from "./properties.component";
+import { PropertyComponent } from "./property.component";
+import { ExpressionComponent } from "./expression.component";
 
 @Component({
     selector: 'property-binding',
     template: `
-        <properties></properties>
+        <property></property>
         <hr/>
+        <expression></expression>
         `,
     directives: [
-        PropertiesComponent
+        PropertyComponent,
+        ExpressionComponent
     ]
 })
 export class AppComponent {}

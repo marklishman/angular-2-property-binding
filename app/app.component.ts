@@ -7,7 +7,7 @@ import { SyntaxComponent } from "./syntax.component";
 import { AttributeComponent } from "./attribute.component";
 
 @Component({
-    selector: 'property-binding',
+    selector: 'app',
     template: `
         <property *ngIf="showSection('property')"></property>
         <expression *ngIf="showSection('expression')"></expression>

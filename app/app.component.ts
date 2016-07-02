@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Location } from '@angular/common';
 
 import { PropertyComponent } from "./property.component";
 import { ExpressionComponent } from "./expression.component";

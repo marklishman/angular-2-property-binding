@@ -1,23 +1,12 @@
 import { Component } from '@angular/core';
 
-import { PropertyComponent } from "./property.component";
-import { ExpressionComponent } from "./expression.component";
-import { SyntaxComponent } from "./syntax.component";
-import { AttributeComponent } from "./attribute.component";
-
 @Component({
     selector: 'app',
     template: `
         <property *ngIf="showSection('property')"></property>
         <expression *ngIf="showSection('expression')"></expression>
         <syntax *ngIf="showSection('syntax')"></syntax>
-        <attribute *ngIf="showSection('attribute')"></attribute>`,
-    directives: [
-        PropertyComponent,
-        ExpressionComponent,
-        SyntaxComponent,
-        AttributeComponent
-    ]
+        <attribute *ngIf="showSection('attribute')"></attribute>`
 })
 export class AppComponent {
 
